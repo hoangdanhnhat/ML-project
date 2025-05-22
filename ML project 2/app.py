@@ -197,4 +197,4 @@ with gr.Blocks(theme=Soft(), css=custom_css) as app:
     clear_button.click(fn=clear_input, outputs=input_text)
 
 # Launch the app
-app.launch()
+app.launch(server_name="0.0.0.0", server_port=7860)
